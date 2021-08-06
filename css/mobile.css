@@ -1,0 +1,72 @@
+@media screen and (max-width:375px) {
+  .header{
+    width:100vw;
+    height:200px;
+
+  }
+  .header .nav__container{
+    display: block;
+    padding-top: 0;
+  }
+  .header .nav__container .header__logo{
+    padding-left: 20px;
+    font-size:15px;
+    height: 45px;
+    line-height: 45px;
+  }
+  .header .menu{
+    display: block;
+    width:100%;
+    text-align: center;
+    font-size: 14px;
+  }
+  .header .menu a{
+    display: block;
+    height: inherit;
+
+  }
+  .header .menu li{
+    height: 40px;
+  }
+  .header .menu .menu__hbtn{
+    height: 14px;
+    display: block;
+    position: fixed;
+    top:14px;
+    right:14px;
+  }
+
+  main{
+    display: none;
+  }
+  .button__top{
+    width:40px;
+    height:40px;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid var(--temp-color);
+    font-size: 12px;
+    position: absolute;
+    bottom:15px;
+    right: 15px;
+    z-index: 999999;
+  }
+  .button__top:hover{
+    background-color: var(--temp-light-color);
+  }
+  .button__arrow{
+    display: block;
+    border-top: 1px solid var(--temp-color);
+    border-left: 1px solid var(--temp-color);
+    width:12px;
+    height:12px;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    transform: rotate(45deg);
+  }
+  .button__hidden{
+    display: none;
+  }
+}
