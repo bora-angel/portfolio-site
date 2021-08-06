@@ -12,7 +12,7 @@
   --temp-color:#888;
   --nav-height:9rem;
   /* ============= Font Size ============= */
-  --big-font-size: 3rem;
+  --big-font-size: 4rem;
   --h1-font-size: 2.7rem;
   --h2-font-size: 2.5rem;
   --h3-font-size: 2.3rem;
@@ -35,7 +35,6 @@
   box-sizing: border-box;
   margin:0;
   padding:0;
-  border:1px solid pink;
 }
 html{
   font-size: 10px;
@@ -110,6 +109,11 @@ a{
 }
 .section-home h3{
   font-size: var(--big-font-size);
+  text-align: center;
+  line-height: 6.5rem;
+}
+.section-home h3 span{
+  font-size:8rem;
 }
 .section-home button{
   background-color: var(--temp-light-color);
@@ -148,14 +152,20 @@ a{
 }
 .section-about .section-about__container p{
   font-size:2rem;
+  height:22rem;
 }
 
-.section-about .section-skills__container div{
+.section-about .section-skills__container>div{
   border:1px solid var(--temp-color);
   border-radius: 30px;
   width:90%;
+  height:40rem;
+  padding:2rem;
 }
-
+.section-about .section-skills__container p{
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
 .section-portfolio{
   padding-top:var(--nav-height);
   width: 100vw;
